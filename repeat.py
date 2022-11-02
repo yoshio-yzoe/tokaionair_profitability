@@ -22,6 +22,7 @@ if __name__ == '__main__':
                 finish_bunkei = 0
                 count_bunkei += 1
 
+
         # 理系チーム
         rikei = 1
         x = 1025

@@ -60,4 +60,3 @@ if __name__ == '__main__':
     else:
         result = "引き分けです!"
     print('今回は文系チームが{}回、理系チームが{}回で、{}'.format(count_bunkei, count_rikei, result))
-
