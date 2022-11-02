@@ -1,0 +1,2 @@
+# tokaionair_profitability
+東海オンエアの1/2を10回VS1/1024を1回を気軽に試すことができます
