@@ -1,6 +1,9 @@
 # tokaionair_profitability
 東海オンエアの『1/1024』と『1/2を10回連続(1/1024)』ってどっちの方が確率高いの！？を気軽に試すことができます
 使い方はnoteにも書いています→https://note.com/zoeyoshi/n/n6898a2d8624e
+Special Thanks: 東海オンエア様の動画→https://youtu.be/Ub7obxXSPH4
+
+
 
 ## 検証方法
 非常に単純です。
@@ -47,4 +50,4 @@ git clone https://github.com/yoshio-yzoe/tokaionair_profitability.git
 今回は文系チームが4989回勝利、理系チームが5006回勝利、引き分けが5回で、理系の勝利です！
 ```
 
-Special Thanks: 東海オンエア様の動画→https://youtu.be/Ub7obxXSPH4
+
