@@ -14,7 +14,7 @@ def yes_no_input():
 if __name__ == '__main__':
     YN = yes_no_input()
 
-    # 文系チーム
+    # 文系チーム.
     bunkei = int(input("文系チームの検証です。0か1か好きな値を入力してください"))
     if (bunkei < 0) or (bunkei > 1):
         print("無効な値です")
