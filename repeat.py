@@ -1,4 +1,5 @@
 import random
+import matplotlib.pyplot as plt
 
 
 if __name__ == '__main__':
@@ -6,6 +7,8 @@ if __name__ == '__main__':
     bunkei_result = 0
     rikei_result = 0
     draw = 0
+    xx = [0] *10000
+    yy = [0] *10000
 
     N = int(input("文系と理系を戦わせる回数を整数で入力してください"))
 
@@ -21,7 +24,7 @@ if __name__ == '__main__':
             else:
                 finish_bunkei = 0
                 count_bunkei += 1
-
+        xx[count_bunkei] += 1
 
         # 理系チーム
         rikei = 1
@@ -36,7 +39,7 @@ if __name__ == '__main__':
             rikei_result += 1
         else:
             draw += 1
-
+        yy[count_rikei] += 1
     if (bunkei_result > rikei_result):
         result = "文系の勝利です！"
     elif (bunkei_result < rikei_result):
@@ -44,4 +47,20 @@ if __name__ == '__main__':
     else:
         result = "引き分けです！"
     print('今回は文系チームが{}回勝利、理系チームが{}回勝利、引き分けが{}回で、{}'.format(bunkei_result, rikei_result, draw, result))
+    print(sum(xx))
+    # 対象データ
+    x1 = range(10000)
 
+    # figureを生成する
+    fig = plt.figure()
+
+    # axをfigureに設定する
+    ax = fig.add_subplot(1, 1, 1)
+
+    # axesに散布図を設定する
+    ax.scatter(x1, xx, c='b')
+    plt.show()
+    ax.scatter(x1, yy, c='b')
+
+    # 表示する
+    plt.show()
